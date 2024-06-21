@@ -1,3 +1,17 @@
+# This script retrieves organizational unit (OU) data from Active Directory (AD) and exports it to a CSV file. 
+# The exported data includes hierarchical parent-child relationships and object counts within each OU. This 
+# CSV can be imported into visualization tools like Lucidchart for better understanding and analysis of the 
+# AD structure.
+#
+# Prerequisites:
+# - Ensure you have the Active Directory module installed.
+# - Run this script with adequate permissions to query Active Directory objects.
+#
+# Usage:
+# 1. Customise the outputPath variable to specify where you want the CSV file to be saved.
+# 2. Execute the script in a PowerShell environment that has access to the AD module and necessary permissions.
+
+
 # Import the Active Directory module
 Import-Module ActiveDirectory
 
