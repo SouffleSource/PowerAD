@@ -1,2 +1,2 @@
 # PowerAD
- Powershell Scripts for Active Directory Reconnaissance
+ Powershell Scripts for Hybrid Active Directory Reconnaissance and Incident Response
