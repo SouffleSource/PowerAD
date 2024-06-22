@@ -1,7 +1,6 @@
 # This script retrieves organizational unit (OU) data from Active Directory (AD) and exports it to a CSV file. 
 # The exported data includes hierarchical parent-child relationships and object counts within each OU. This 
-# CSV can be imported into visualization tools like Lucidchart for better understanding and analysis of the 
-# AD structure.
+# CSV can be imported into visualisation tools like Lucidchart for better analysis of the AD structure.
 #
 # Prerequisites:
 # - Ensure you have the Active Directory module installed.
@@ -44,7 +43,7 @@ $rootDomain = (Get-ADDomain).DistinguishedName
 $ouHierarchy = Get-ADOUHierarchy -ParentOU $rootDomain
 
 # Define the output path
-$outputPath = "C:\Users\daniel776\OneDrive - Baillie Gifford & Co\Desktop\OUs.csv"
+$outputPath = "[Path]"
 
 # Export the OU hierarchy to a CSV file
 $ouHierarchy | Export-Csv -Path $outputPath -NoTypeInformation -Encoding utf8
