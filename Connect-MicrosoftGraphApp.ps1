@@ -1,5 +1,6 @@
 # Description:
-# This script demonstrates how to connect to Microsoft Graph as an application using delegated access. It uses secrets stored in Microsoft PowerShell SecretManagement and the Microsoft Graph PowerShell SDK.
+# This script demonstrates how to connect to Microsoft Graph as an application using delegated access. 
+# It uses secrets stored in Microsoft PowerShell SecretManagement and the Microsoft Graph PowerShell SDK.
 #
 # Prerequisites:
 # - Ensure you have installed the Microsoft.Graph.Authentication and Microsoft.PowerShell.SecretManagement modules.

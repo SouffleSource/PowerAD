@@ -1,5 +1,6 @@
 # Description:
-# This script utilises replication metadata to identify the most recent changes to the 'member' attribute of Tier Zero groups. The results are stored in a CSV file and also displayed in the console.
+# This script utilises replication metadata to identify the most recent changes to the 'member' attribute of Tier Zero groups.
+# The results are stored in a CSV file and also displayed in the console.
 #
 # Prerequisites:
 # - Ensure you have the Active Directory module installed.

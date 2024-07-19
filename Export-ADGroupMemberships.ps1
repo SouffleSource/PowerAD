@@ -2,6 +2,7 @@
 # This script searches Active Directory for groups whose names contain specific strings provided by the user. 
 # It retrieves details about these groups, including descriptions, notes, members, and their organisational unit paths.
 # The results are exported into CSV files, named after each search string.
+# IMPORTANT: It will return an unspecified error on Get-ADGroupMember if the membership is very large - ignore it and it will continue.
 #
 # Prerequisites:
 # - Ensure you have the Active Directory module installed.

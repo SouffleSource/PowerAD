@@ -1,5 +1,6 @@
 # Description:
-# This script utilises replication metadata to identify the most recent changes to identity attributes of Tier Zero computers, including groups that provide access to them. It fetches the last logon timestamp, password last set date, creation date, operating system, and metadata. The results are exported to a CSV file and displayed in the console.
+# This script utilises replication metadata to identify the most recent changes to identity attributes of Tier Zero computers, including groups that provide access to them. 
+# It fetches the last logon timestamp, password last set date, creation date, operating system, and metadata. The results are exported to a CSV file and displayed in the console.
 #
 # Prerequisites:
 # - Ensure you have the Active Directory module installed.
