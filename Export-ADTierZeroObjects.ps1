@@ -34,7 +34,7 @@ $groups = @(
     "Read-only Domain Controllers",
     "Schema Admins",
     "Server Operators",
-    "DnsAdmins"
+    "Dns Admins"
 )
 
 $output = @()
