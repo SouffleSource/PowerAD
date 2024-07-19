@@ -10,7 +10,6 @@
 # 1. Customise the outputPath variable to specify where you want the CSV file to be saved.
 # 2. Execute the script in a PowerShell environment that has access to the AD module and necessary permissions.
 
-
 # Import the Active Directory module
 Import-Module ActiveDirectory
 
@@ -42,10 +41,8 @@ $rootDomain = (Get-ADDomain).DistinguishedName
 # Get the OU hierarchy starting from the root
 $ouHierarchy = Get-ADOUHierarchy -ParentOU $rootDomain
 
-# Define the output path
-$outputPath = "[Path]"
-
-# Export the OU hierarchy to a CSV file
-$ouHierarchy | Export-Csv -Path $outputPath -NoTypeInformation -Encoding utf8
-
-Write-Host "OU hierarchy with object counts exported to $outputPath"
+# Export
+$path = "ADOUHierarchy.csv"
+$ouHierarchy | Export-Csv -Path $path -NoTypeInformation -Encoding utf8
+$ouHierarchy | Format-Table -AutoSize
+Write-Output "Report generated: $path"

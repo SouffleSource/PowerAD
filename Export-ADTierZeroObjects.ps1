@@ -18,10 +18,10 @@ Import-Module ActiveDirectory
 $groups = @(
     "Account Operators",
     "Administrators",
-    "Allowed RODC Password",
+    "Allowed RODC Password Replication Group",
     "Backup Operators",
     "Cryptographic Operators",
-    "Denied RODC Password",
+    "Denied RODC Password Replication Group",
     "Distributed COM Users",
     "Domain Admins",
     "Domain Controllers",
@@ -72,7 +72,8 @@ foreach ($groupName in $groups) {
     }
 }
 
-# Export to CSV
-$output | Export-Csv -Path "ADGroupMembers.csv" -NoTypeInformation
-
-Write-Output "CSV report generated: ADGroupMembers.csv"
+# Export
+$path = "ADTierZeroObjects.csv"
+$output | Export-Csv -Path $path -NoTypeInformation
+$ouHierarchy | Format-Table -AutoSize
+Write-Output "Report generated: $path"
